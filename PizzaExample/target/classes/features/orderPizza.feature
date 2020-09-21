@@ -6,4 +6,4 @@ Feature: Order a pizza
   Scenario: Order a classic Pizza
     Given I'm in "https://www.papajohns.com.co/"
     When I select a chicken mushroom pizza
-    Then I select ingredients and size
+    Then I select the ingredients and the size

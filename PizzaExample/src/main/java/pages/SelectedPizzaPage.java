@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 import utils.Util;
 
 public class SelectedPizzaPage extends PageObject {
-    By megaSizeOption = By.xpath("//div//div//div//div//div//div//div[4]//a[1]");
+    By megaSizeOption = By.xpath("//a[contains(@title,'MegaFamiliar')]");
     By modifyIngredientsBtn = By.xpath("//a[contains(text(),'Modificar ingredientes')]");
     By OnionAddBox = By.id("adicion_1662");
     By jalapenosAddBox = By.id("adicion_1687");
     By italiansausageAddBox = By.id("adicion_1682");
-    By addBtn = By.xpath("//html//body//div//div//div//div//div//div//div//div//div//a[contains(text(),'Agregar')]");
-    By checkoutBtn = By.xpath("//div[6]//div[1]//input[1]");
+    By addBtn = By.xpath("//a[contains(@class,'btn redbtn')]");
+    By checkoutBtn = By.xpath("//input[contains(@title,'Añadir')]");
 
     public void clickSelectedsize() {
         Accion.click(getDriver(), megaSizeOption);

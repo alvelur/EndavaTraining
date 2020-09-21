@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 
 public class PapaJhonsIndexPage extends PageObject {
 
-    By traditionalSeccion = By.xpath("//nav[@id='main-menu']//a[contains(text(),'Tradicionales')]");
-    By chickenPizzaOption = By.xpath("//li[1]//div[1]//ul[1]//li[3]//a[1]");
+    By traditionalSeccion = By.xpath("//a[contains(@data-id,'5613')]");
+    By chickenPizzaOption = By.xpath("//a[contains(@title,'POLLO Y CHAMPI')]");
 
     public void moveToTraditionalSeccion() {
         Accion.moverCursor(getDriver(), traditionalSeccion);
